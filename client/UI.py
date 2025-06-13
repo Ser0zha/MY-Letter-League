@@ -32,18 +32,6 @@ def game_field_creating(sc: Surface, width=30, height=30) -> None:
     field_resolution_x = width // grid_w
     field_resolution_y = height // grid_h
 
-    # for y in range(grid_h):
-    #     for x in range(grid_w):
-    #         pygame.draw.rect(sc,
-    #                          FIELD_COLOR,
-    #                          (x * field_resolution_x,
-    #                           y * field_resolution_y,
-    #                           field_resolution_x - 2,
-    #                           field_resolution_y - 2
-    #                           )
-    #                          )
-    #         pygame.display.update()
-
     for y in range(grid_h):
         for x in range(grid_w):
             rect = pygame.Rect(
